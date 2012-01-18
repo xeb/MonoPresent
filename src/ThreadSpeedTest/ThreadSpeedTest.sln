@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSpeedTest", "ThreadSpeedTest.csproj", "{E4725818-7ECA-4BF2-8C92-AD65A9DA954B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4725818-7ECA-4BF2-8C92-AD65A9DA954B}.Debug|x86.ActiveCfg = Debug|x86
+		{E4725818-7ECA-4BF2-8C92-AD65A9DA954B}.Debug|x86.Build.0 = Debug|x86
+		{E4725818-7ECA-4BF2-8C92-AD65A9DA954B}.Release|x86.ActiveCfg = Release|x86
+		{E4725818-7ECA-4BF2-8C92-AD65A9DA954B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ThreadSpeedTest.csproj
+	EndGlobalSection
+EndGlobal
