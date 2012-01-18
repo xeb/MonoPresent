@@ -22,7 +22,7 @@ namespace ThreadSpeedTest
 			}
 			
 			// 100 batches
-			for(int batch = 1; batch <= 100; batch++)
+			for(int batch = 1; batch <= numBatches; batch++)
 			{
 				_allTimes.AddRange(_batchTimes);
 				_batchTimes.Clear();
