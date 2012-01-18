@@ -183,7 +183,6 @@ a:hover {
 .general {
     position: relative;
 }
-
 .general h1 {
     font-size: 120px;
     line-height: 140px;
@@ -200,7 +199,6 @@ a:hover {
     left: 500px;
     top: 100px;
 }
-
 .general p {
     margin: 30px 0;
 }
@@ -210,6 +208,11 @@ a:hover {
 .general li {
     list-style-type: disc;
     margin: 20px 0;
+}
+.general .code {
+    font-family: courier;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* impress.js title */

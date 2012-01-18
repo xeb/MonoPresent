@@ -23,7 +23,7 @@
 
     <div id="intro" class="step slide general" data-x="-10000" data-y="-1500">
         <h1>Mono</h1>
-        <p>...and some OSS fun</p>
+        <p>...and some alternative tech fun</p>
         <p>1/18/2012</p>
         <p>Mark Kockerbeck</p>
         <img src="img/monologo.png" id="logo" />
@@ -59,21 +59,53 @@
         <h1>What is it?</h1>
         <ul>
             <li>An Open Source implementation of the .NET Framework</li>
-            <li>C# Compiler</li>
-            <li>Common Language Runtime (<span class="little">The Common Language Infrastructure is an open standard / ECMA-335</span>)</li>
+            <li>C# Compiler (option for LLVM)</li>
+            <li>Common Language Runtime <br/>(<span class="little">The Common Language Infrastructure is an open standard / ECMA-335</span>)</li>
             <li>MonoDevelop, an IDE</li>
             <li>Code Execution Engine that translates CIL into native code either by JIT, Ahead-of-Time (AOT) or Full Static</li>
         </ul>
     </div>
 
-    <div id="gc" class="step slide general" data-x="-7000" data-y="-1000">
-        <h1>Garbage Collection</h1>
+    <div id="gc" class="step slide general" data-x="-7000" data-y="-2000">
+        <h2>Garbage Collection</h2>
         <ul>
             <li>Comes with a Boehm-Demers-Weiser Conservative Garbage Collector (<strong>default</strong>)</li>
             <li>Comes with a Simple Generational GC (SGen)</li>
-            <li>Common Language Runtime (<span class="little">The Common Language Infrastructure is an open standard / ECMA-335</span>)</li>
-            <li>MonoDevelop, an IDE</li>
-            <li>Code Execution Engine that translates CIL into native code either by JIT, Ahead-of-Time (AOT) or Full Static</li>
+            <li>Arguably less performant than Java or .NET</li>
+            <li>But...it really depends</li>
+            <li>GC is swappable via command line, examples: 
+                <br/><span class="code">mono --gc=sgen ThreadSpeedTest.exe 30</span>
+                <br/><span class="code">mono --gc=boehm ThreadSpeedTest.exe 30</span>
+            </li>
+        </ul>
+    </div>
+
+    <div id="gc" class="step slide general" data-x="-6000" data-y="-2000">
+        <h2>Usage &amp; Tools</h2>
+        <ul>
+            <li><strong>mono</strong> Main command for invocation (like most Unix languages, ruby, python, etc.)</li>
+            <li>Comes with a commandline interface </li>
+            <li>Arguably less performant than Java or .NET</li>
+            <li>But...it really depends</li>
+            <li>GC is swappable via command line, examples: 
+                <br/><span class="code">mono --gc=sgen ThreadSpeedTest.exe 30</span>
+                <br/><span class="code">mono --gc=boehm ThreadSpeedTest.exe 30</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- SIMD, LLVM, speed tests, GC tests, xbuild -->
+
+    <div id="gc" class="step slide general" data-x="7000" data-y="0">
+        <h2>Brought to you by...</h2>
+        <ul>
+            <li>A lot of other people's hard work</li>
+            <li>Two charges on my Macbook Air</li>
+            <li>Amazon's EC2</li>
+            <li>Sublime Text 2</li>
+            <li>MonoDevelop</li>
+            <li>SSH</li>
+            <li>CoRD (RDP client for Mac)</li>
         </ul>
     </div>
 
