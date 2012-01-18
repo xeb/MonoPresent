@@ -59,7 +59,7 @@ namespace ThreadSpeedTest
 				}
 				
 				Console.WriteLine("{0} Batch {1}, Avg={2}, Min={3}, Max={4}", 
-				                  synchronous ? "Synchronous" : "Asynchronous" + " " + _operation == Operation.Random ? "Random" : "Web",
+				                  (synchronous ? "Synchronous" : "Asynchronous") + " " + (_operation == Operation.Random ? "Random" : "Web"),
 				                  batch, _batchTimes.Average(), _batchTimes.Min(), _batchTimes.Max());
 			}
 			
