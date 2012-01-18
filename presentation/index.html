@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Mono Presentation</title>
+    
+    <meta name="description" content="Mono Presentation">
+    <meta name="author" content="Mark Kockerbeck" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/presentation.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+
+    <div id="intro" class="step slide general" data-x="-10000" data-y="-1500">
+        <h1>Mono</h1>
+        <p>...and some OSS fun</p>
+        <p>1/18/2012</p>
+        <p>Mark Kockerbeck</p>
+        <img src="img/monologo.png" id="logo" />
+        <br/><br/>
+        <p class="little">(this presentation was done with <a href="http://bartaz.github.com/impress.js/#/bored">impress.js</a>)</p>
+    </div>
+
+    <div id="first-things" class="step slide general" data-x="-9000" data-y="-1500">
+        <h2>First things first...</h2>
+        <ul>
+            <li>It's pronounced MOAN-OH</li>
+            <li>Started by Miguel de Icaza</li>
+            <li>The logo is a Monkey (Mono is Spanish for Monkey)</li>
+            <li>It's an Open Source project that is still active<br/><span class="little">(last commit was <a href="https://github.com/mono/mono/commits/master">yesterday</a>)</span></li>
+            <li>Novell did run the project but now it's Xamarin <p>(A company formed by Mono developers)</p></li>
+        </ul>
+    </div>
+
+    <div id="why" class="step slide general" data-x="-8000" data-y="-1500">
+        <h1>Why?</h1>
+        <ul>
+            <li>It's .NET!  You can write it right now w/ C#</li>
+            <li>It's cross platform (Linux, Mac and even Windows)</li>
+            <li><a href="http://unity3d.com/">Unity</a> uses it for scripting &amp; tooling (see <a href="http://starwars.lego.com/en-US/Games/QuestForR2D2/Default.aspx">Lego Star Wars Quest for R2D2</a> using the Unity Web Client)
+            </li>
+            <li>Growing mobile space (MonoTouch and Mono for Android)</li>
+            <li>Full static compilation onto iOS, PS3 and XBox360 platforms</li>
+        </ul>
+    </div>
+
+
+    <div id="what" class="step slide general" data-x="-7000" data-y="-1000">
+        <h1>What is it?</h1>
+        <ul>
+            <li>An Open Source implementation of the .NET Framework</li>
+            <li>C# Compiler</li>
+            <li>Common Language Runtime (<span class="little">The Common Language Infrastructure is an open standard / ECMA-335</span>)</li>
+            <li>MonoDevelop, an IDE</li>
+            <li>Code Execution Engine that translates CIL into native code either by JIT, Ahead-of-Time (AOT) or Full Static</li>
+        </ul>
+    </div>
+
+    <div id="gc" class="step slide general" data-x="-7000" data-y="-1000">
+        <h1>Garbage Collection</h1>
+        <ul>
+            <li>Comes with a Boehm-Demers-Weiser Conservative Garbage Collector (<strong>default</strong>)</li>
+            <li>Comes with a Simple Generational GC (SGen)</li>
+            <li>Common Language Runtime (<span class="little">The Common Language Infrastructure is an open standard / ECMA-335</span>)</li>
+            <li>MonoDevelop, an IDE</li>
+            <li>Code Execution Engine that translates CIL into native code either by JIT, Ahead-of-Time (AOT) or Full Static</li>
+        </ul>
+    </div>
+
+    <div id="overview" class="step" data-x="-10000" data-y="0" data-scale="10">
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+
+</body>
+</html>
