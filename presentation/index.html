@@ -80,36 +80,70 @@
         </ul>
     </div>
 
-    <div id="gc" class="step slide general" data-x="-6000" data-y="-2000">
+    <div id="usage" class="step slide general" data-x="-6000" data-y="-2000">
         <h2>Usage &amp; Tools</h2>
         <ul>
-            <li><strong>mono</strong> Main command for invocation (like most Unix languages, ruby, python, etc.)</li>
-            <li>Comes with a commandline interface </li>
-            <li>Arguably less performant than Java or .NET</li>
-            <li>But...it really depends</li>
-            <li>GC is swappable via command line, examples: 
-                <br/><span class="code">mono --gc=sgen ThreadSpeedTest.exe 30</span>
-                <br/><span class="code">mono --gc=boehm ThreadSpeedTest.exe 30</span>
+            <li><strong>mono</strong> - Main command for runtime / JIT compilation (like most Unix languages)
+                <br/><span class="code">#!/bin/sh<br/>/usr/bin/mono /path/to/my/app.exe "$@"</span>
+                <br/><span class="code">mono --aot -O=all test.exe</span>
+            </li>
+            <li><strong>mcs</strong> - Mono's C# compiler</li>
+            <li><strong>mint</strong> - Mono interpreter</li>
+            <li><strong>xsp</strong> - Standalone ASP.NET web server</li>
+            <li><strong>xbuild</strong> - Mono version of MSBuild
+                <br/><span class="code">xbuild /p:Configure=Release</span>
             </li>
         </ul>
     </div>
 
-    <!-- SIMD, LLVM, speed tests, GC tests, xbuild -->
-
-    <div id="gc" class="step slide general" data-x="7000" data-y="0">
-        <h2>Brought to you by...</h2>
+    <div id="technologies" class="step slide general" data-x="-6000" data-y="-1000" data-rotate="90">
+        <h2>Technologies Supported</h2>
         <ul>
-            <li>A lot of other people's hard work</li>
-            <li>Two charges on my Macbook Air</li>
-            <li>Amazon's EC2</li>
-            <li>Sublime Text 2</li>
-            <li>MonoDevelop</li>
-            <li>SSH</li>
-            <li>CoRD (RDP client for Mac)</li>
+            <li><strong>ASP.NET</strong> - via XSP / mod_mono for Apache</li>
+            <li><strong>WCF</strong> - Formerly called Olive.  Has some limitations (no MSMQ, WSHttpBinding, Data Services or Workflow Services)</li>
+            <li><strong>WinForms</strong> - Deprecated, no support for WPF coming</li>
+            <li><strong>Database Connectivity</strong> - MySQL / SQLite / PostgreSQL</li>
         </ul>
     </div>
 
-    <div id="overview" class="step" data-x="-10000" data-y="0" data-scale="10">
+    <div id="webclient" class="step slide general" data-x="-7000" data-y="0" data-rotate="270">
+        <h2>Performance Tests</h2>
+        <ul>
+            <li>Downloads a website in 5 threads and 1 time synchronously for 10k iterations</li>
+            <li>Logs the execution time (avg, min, max)</li>
+            <li>One Linux m1.small instance <br/><span class="little">(Basic 32-bit Amazon Linux AMI 2011.09, 1 ECU, 1 Core, 1.7GB RAM)</span></li>
+            <li>One Windows m1.small instance <br/><span class="little">(Microsoft Windows Server 2008 Base, 1 ECU, 1 Core, 1.7GB RAM)</span></li>
+            <li>Mono on Linux vs. Mono on Windows vs. .NET on Windows</li>
+        </ul>
+    </div>
+
+    <div id="graph1" class="step general" data-x="-10000" daya-y="4000" data-scale="1" data-rotate="270">
+        <img src="img/graph1.png" />
+    </div>
+
+    <div id="graph2" class="step general" data-x="-8500" daya-y="4000" data-scale="2" data-rotate="180">
+        <img src="img/graph2.png" />
+    </div>
+
+    <div id="graph3" class="step general" data-x="-4500" daya-y="1000" data-scale="3" data-rotate="90">
+        <img src="img/graph3.png" />
+    </div>
+
+    <div id="graph4" class="step general" data-x="-2500" daya-y="0" data-scale="2" data-rotate="0">
+        <img src="img/graph4.png" />
+    </div>
+
+
+    <div id="by" class="step slide general" data-x="-2500" data-y="-2000">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="http://www.mono-project.com">Mono Project</a></li>
+            <li><a href="http://github.com/mono">Mono Source on Github</a></li>
+            <li><a href="https://github.com/xeb/MonoPresent">Presentation</a></li>
+        </ul>
+    </div>
+
+    <div id="overview" class="step" data-x="-4000" data-y="0" data-scale="12">
     </div>
 
 </div>
