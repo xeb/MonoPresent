@@ -30,7 +30,7 @@ namespace ThreadSpeedTest
 				synchronous = false;
 			}
 			
-			if(args != null && args.Length >= 3 && args[2].ToLower() == "Random")
+			if(args != null && args.Length >= 3 && args[2].ToLower() == "random")
 			{
 				_operation = Operation.Random;
 			}
