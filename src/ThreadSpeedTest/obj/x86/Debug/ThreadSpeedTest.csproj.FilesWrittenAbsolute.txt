@@ -1,0 +1,4 @@
+/Users/xeb/Projects/MonoPresent/src/ThreadSpeedTest/bin/Debug/ThreadSpeedTest.exe.mdb
+/Users/xeb/Projects/MonoPresent/src/ThreadSpeedTest/bin/Debug/ThreadSpeedTest.exe
+/Users/xeb/Projects/MonoPresent/src/ThreadSpeedTest/obj/x86/Debug/ThreadSpeedTest.exe
+/Users/xeb/Projects/MonoPresent/src/ThreadSpeedTest/obj/x86/Debug/ThreadSpeedTest.exe.mdb

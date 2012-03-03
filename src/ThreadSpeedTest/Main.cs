@@ -16,6 +16,8 @@ namespace ThreadSpeedTest
 		
 		public static void Main (string[] args)
 		{
+			#region Args
+			
 			int numBatches = 10;
 			
 			if(args != null && args.Length >= 1 && !int.TryParse(args[0], out numBatches))
@@ -34,6 +36,8 @@ namespace ThreadSpeedTest
 			{
 				_operation = Operation.Random;
 			}
+			
+			#endregion
 			
 			// 100 batches
 			for(int batch = 1; batch <= numBatches; batch++)
